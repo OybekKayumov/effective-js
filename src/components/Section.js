@@ -67,13 +67,18 @@ const LeftButton = styled.div`
 `
 
 const RightButton = styled(LeftButton)`
+  background: white;
+  opacity: 0.65;
+  color: black;
 
 `
 
 const DownArrow = styled.img`
-  margin-top: 20px;
   height: 40px;
+  overflow-x: hidden;
   animation: animateDown infinite 1.5s
 `
 
-const Buttons = styled.div``
+const Buttons = styled.div`
+
+`
