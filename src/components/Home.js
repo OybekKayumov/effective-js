@@ -5,10 +5,17 @@ import Section from './Section'
 function Home() {
   return (
     <Container>
-      <Section />
-      <Section />
-      <Section />
-      <Section />
+      <Section 
+        title = "Model S"
+        description = "Order Online for Touchless Delivery"
+        backgroundImg = "model-s.jpg"
+        leftBtnText = "Custom Order"
+        rightBtnText = "Existing inventory"
+
+      />
+      {/* <Section /> */}
+      {/* <Section /> */}
+      {/* <Section /> */}
     </Container>
   )
 }
