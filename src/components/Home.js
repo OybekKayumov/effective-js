@@ -6,6 +6,9 @@ function Home() {
   return (
     <Container>
       <Section />
+      <Section />
+      <Section />
+      <Section />
     </Container>
   )
 }
