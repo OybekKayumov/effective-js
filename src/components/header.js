@@ -53,7 +53,6 @@ const RightMenu = styled.div`
       a {
         font-weight: 600;
         text-transform: uppercase;
-        padding: 0 10px;
-        flex-wrap: nowrap;
+        margin: 10px;
       }
 `;
