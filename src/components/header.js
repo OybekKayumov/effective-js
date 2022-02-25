@@ -4,7 +4,9 @@ import styled from 'styled-components'
 function Header() {
   return (
     <Container>
-      Header
+      <a>
+        <img src="/images/logo.svg" alt="TESLA"/>
+      </a>
     </Container>
   )
 }
@@ -14,3 +16,4 @@ export default Header
 const Container = styled.div`
 
 `;
+
