@@ -11,6 +11,10 @@
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 @keyframes animateDown {
   0%, 29%, 50%, 80%, 100% {
     transform: translateY(0);
