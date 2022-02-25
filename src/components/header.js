@@ -12,8 +12,10 @@ function Header() {
           <p><a href='#'>Model 3</a> </p>
           <p><a href='#'>Model X</a> </p>
           <p><a href='#'>Model Y</a> </p>
-
       </Menu>
+      <RightMenu>
+
+      </RightMenu>
     </Container>
   )
 }
@@ -43,4 +45,8 @@ const Menu = styled.div`
         padding: 0 10px;
         flex-wrap: nowrap;
       }
+`;
+
+const RightMenu = styled.div`
+
 `;
