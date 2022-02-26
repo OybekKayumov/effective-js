@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import { CustomConsole } from '@jest/console';
 
 function Header() {
   return (
@@ -21,6 +22,9 @@ function Header() {
           <CustomMenu />
       </RightMenu>
       <BurgerNav>
+        <CloseWrapper>
+          <CustomClose />
+        </CloseWrapper>
         <li><a href="#">Existing Inventory</a></li>
         <li><a href="#">Used Inventory</a></li>
         <li><a href="#">Trade-in</a></li>
@@ -100,7 +104,13 @@ const BurgerNav = styled.div`
         a {
           font-weight: 600;
         }  
-
       }
+`
+
+const CustomClose = styled(CloseIcon)`
 
 `
+
+const CloseWrapper = styled.div`
+
+`;
