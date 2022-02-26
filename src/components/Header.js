@@ -19,6 +19,15 @@ function Header() {
           <a href='#'>Tesla Account</a>
           <CustomMenu />
       </RightMenu>
+      <BurgerNav>
+        <li><a href="#">Existing Inventory</a></li>
+        <li><a href="#">Used Inventory</a></li>
+        <li><a href="#">Trade-in</a></li>
+        <li><a href="#">Cybertruck</a></li>
+        <li><a href="#">Roadster</a></li>
+        <li><a href="#">Existing Inventory</a></li>
+        <li><a href="#">Existing Inventory</a></li>
+      </BurgerNav>
     </Container>
   )
 }
@@ -69,3 +78,14 @@ const RightMenu = styled.div`
 const CustomMenu = styled(MenuIcon)`
       cursor: pointer;
 `;
+
+const BurgerNav = styled.div`
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background-color: #fff;
+      width: 300px;
+      z-index: 100;
+
+`
