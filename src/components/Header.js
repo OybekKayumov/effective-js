@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 
 function Header() {
   return (
@@ -44,6 +45,7 @@ const Container = styled.div`
       top: 0;
       left: 0;
       right: 0;
+      z-index: 1;
 `;
 
 const Menu = styled.div`
@@ -86,6 +88,19 @@ const BurgerNav = styled.div`
       right: 0;
       background-color: #fff;
       width: 300px;
-      z-index: 100;
+      z-index: 16;
+      list-style: none;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      li {
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        a {
+          font-weight: 600;
+        }  
+
+      }
 
 `
