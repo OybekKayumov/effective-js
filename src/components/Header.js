@@ -5,9 +5,6 @@ import CloseIcon from '@mui/icons-material/Close';
 import { selectCars } from '../features/car/carSlice';
 import { useSelector } from 'react-redux';
 
-
-// import { CustomConsole } from '@jest/console';
-
 function Header() {
 
   const [burgerStatus, setBurgerStatus] = useState(false);
@@ -128,7 +125,6 @@ const CustomClose = styled(CloseIcon)`
 
 
 `
-
 const CloseWrapper = styled.div`
       display: flex;
       justify-content: flex-end;
