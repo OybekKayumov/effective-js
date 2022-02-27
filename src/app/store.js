@@ -4,6 +4,6 @@ import carReducer from '../features/car/carSlice.js';
 
 export const store = configureStore({
   reducer: {
-    counter: carReducer,
+    car: carReducer,
   },
 });
