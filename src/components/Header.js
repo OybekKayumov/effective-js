@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 // import { CustomConsole } from '@jest/console';
 
 function Header() {
+
+  const [burgerStatus, setBurgerStatus] = useState(false);
   return (
     <Container>
       <a>
@@ -19,9 +21,9 @@ function Header() {
       <RightMenu>
           <a href='#'>Shop</a>
           <a href='#'>Tesla Account</a>
-          <CustomMenu />
+          <CustomMenu onClick={() => setBurgerStatus(true)}/>
       </RightMenu>
-      <BurgerNav>
+      <BurgerNav show={burgerStatus}>
         <CloseWrapper>
           <CustomClose />
         </CloseWrapper>
@@ -97,7 +99,8 @@ const BurgerNav = styled.div`
       padding: 20px;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      text-align: start;
+      transform: ${props => props.show ? 'translateX(0)' : 'translateX(100%)'};
       li {
         padding: 15px 0;
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -108,9 +111,13 @@ const BurgerNav = styled.div`
 `
 
 const CustomClose = styled(CloseIcon)`
+      cursor: pointer;
+
 
 `
 
 const CloseWrapper = styled.div`
+      display: flex;
+      justify-content: flex-end;
 
 `;
